@@ -36,7 +36,7 @@ int main(void) {
     printf("%d\n", ++l_counter);   
 }
 
-/* Function Declaration */
+/* Function Definition */
 void DSC_sort(int *array, int size){
     int key, i;
     for (int l_counter = 1; l_counter < size; ++l_counter){

@@ -60,35 +60,27 @@ int main(void){
     result = my_strcmp(str1, str2);     /* strcmp() can be used */
 
     if (result > 0)
-    {
         /* str1 > str2 */
         printf("%d", 1);
-    }
     else if (result < 0)
-    {
         /* str1 < str2 */
         printf("%d", -1);
-    }
     else if (0 == result)
-    {
         /* str1 = str2 */
         printf("%d", 0);
-    }
 }
+
 void lowerCase(char *str){
     for (int i = 0 ;i < strlen(str);i++)
-    {
         if (str[i] <= 90)
-        {
             str[i] += 32;
-        }   
-    }
 }
+
 int my_strcmp(const char *str1, const char *str2) {
     while (*str1 != '\0' && *str2 != '\0') {
-        if (*str1 != *str2) {
+        if (*str1 != *str2) 
             return (*str1 - *str2);
-        }
+
         str1++;
         str2++;
     }

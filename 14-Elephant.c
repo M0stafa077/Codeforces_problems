@@ -39,26 +39,30 @@ Examples
 int main(){
     int x;
     scanf("%d", &x);
-    if ((x % 5) == 0){
+    if ((x % 5) == 0)
         printf("%d", x / 5);
-    }else if ((x % 5) >= 1)
-    {
+    
+    else if ((x % 5) >= 1)
         printf("%d", ((x - (x % 5))/5) + 1);
-    }else if ((x % 4) == 0){
+    
+    else if ((x % 4) == 0)
         printf("%d", x / 4);
-    }else if ((x % 4) >= 1)
-    {
+    
+    else if ((x % 4) >= 1)
         printf("%d", ((x - (x % 4))/4) + 1);
-    } else if ((x % 3) == 0){
+    
+    else if ((x % 3) == 0)
         printf("%d", x / 3);
-    }else if ((x % 3) >= 1)
-    {
+    
+    else if ((x % 3) >= 1)
         printf("%d", ((x - (x % 3))/3) + 1);
-    } else if ((x % 2) == 0){
+    
+    else if ((x % 2) == 0)
         printf("%d", x / 2);
-    }else if ((x % 2) >= 1)
-    {
+    
+    else if ((x % 2) >= 1)
         printf("%d", ((x - (x % 2))/2) + 1);
-    }else   
+    
+    else   
         printf("%d", 1);
 }

@@ -5,20 +5,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-
-void sort(int *array, int size){
-    int key, i;
-    for (int l_counter = 1; l_counter < size; ++l_counter){
-        key = array[l_counter];
-        i = l_counter - 1;
-        while (i >= 0 && array[i] > key)
-        {
-            array[i + 1] = array[i];
-            --i;
-        }
-        array[i + 1] = key;
-    }
-}
+#include "helper_functions/helper_functions.c"
 
 int main(void) {
     int columns, l_counter;
@@ -28,7 +15,7 @@ int main(void) {
     for (l_counter = 0; l_counter < columns; l_counter++)
         scanf("%d", &toys[l_counter]);
 
-    sort(toys, columns);
+    ASC_sort(toys, columns);
 
     for (l_counter = 0; l_counter < columns; l_counter++)
         printf("%d ", toys[l_counter]);

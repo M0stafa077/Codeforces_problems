@@ -5,8 +5,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-
-void DSC_sort(int *array, int size); /* Function sorts an array in descending way */
+#include "helper_functions/helper_functions.c"
 
 int main(void) {
     int number_of_coins, l_counter, sum = 0, result = 0;
@@ -33,20 +32,6 @@ int main(void) {
     }
 
     /* Print the answer */
-    printf("%d\n", ++l_counter);   
-}
-
-/* Function Definition */
-void DSC_sort(int *array, int size){
-    int key, i;
-    for (int l_counter = 1; l_counter < size; ++l_counter){
-        key = array[l_counter];
-        i = l_counter - 1;
-        while (i >= 0 && array[i] < key)
-        {
-            array[i + 1] = array[i];
-            --i;
-        }
-        array[i + 1] = key;
-    }
+    printf("%d\n", ++l_counter); 
+    free(coins);  
 }

@@ -5,21 +5,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-void ASC_sort(int *array, int size)
-{
-    int key, i, f_counter;
-    for (f_counter = 1; f_counter < size; ++f_counter)
-    {
-        key = array[f_counter];
-        i = f_counter - 1;
-        while (i >= 0 && array[i] > key)
-        {
-            array[i + 1] = array[i];
-            --i;
-        }
-        array[i + 1] = key;
-    }
-}
+#include "helper_functions/helper_functions.c"
 
 int main(void) 
 {
@@ -44,4 +30,5 @@ int main(void)
     }
 
     printf("%d", minimum_difference);    
+    free(puzzles);
 }

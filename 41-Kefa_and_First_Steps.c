@@ -20,7 +20,8 @@ int main(void){
     free(money);
 }
 
-int LSS(int *array, int size){
+int LSS(int *array, int size)
+{
     int current_sub_segment = 1, max_sub_segment = 1, l_counter;
 
     for(l_counter = 0; l_counter < size - 1; ++l_counter){
@@ -31,6 +32,8 @@ int LSS(int *array, int size){
 
         if(current_sub_segment > max_sub_segment)
             max_sub_segment = current_sub_segment;
+        else 
+            {/*Nothing*/}    
     }
 
     return max_sub_segment;        

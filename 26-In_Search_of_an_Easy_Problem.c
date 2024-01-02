@@ -15,14 +15,15 @@ int main(void) {
     for (int i = 0; i < number_of_people; i++)
     {
         scanf("%d", &input_arr[i]);
+        
         if (input_arr[i] == 1)
-        {
             hard_flag = 1;
-        }
     }
+    
     if (hard_flag) 
         printf("HARD");
     else   
         printf("EASY");
+    
     free(input_arr);
 }

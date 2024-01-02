@@ -32,9 +32,9 @@ int main(void) {
     scanf("%s", input);
 
     if (((int)input[0] >= 97) && ((int)input[0] <= 123))
-    {
         input[0] -= 32;
-    }else{ /* Nothing */ }
+    else
+        { /* Nothing */ }
 
     printf("%s\n", input);
 }

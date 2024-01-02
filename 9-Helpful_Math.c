@@ -39,8 +39,8 @@ Examples:
 #include <stdio.h>
 #include <stdlib.h>
 #include <string.h>
+#include "helper_functions/helper_functions.c"
 
-void sort(int* arr, int size);
 
 int main(void){
     char* arr = (char *) malloc(100 * sizeof(char));
@@ -55,29 +55,12 @@ int main(void){
         tok = strtok(NULL, "+");
     }
 
-    sort(numbers, size);
+    ASC_sort(numbers, size);
 
     for (int i = 0; i < size - 1; i++)
-    {
         printf("%d+", numbers[i]);   
-    }
+    
     printf("%d", numbers[size - 1]);
+    free(arr);
 }
-
-// .Insertion sort algorithm:
-void sort(int* arr, int size){
-        int key;
-    for (int i = 1; i < size; ++i)
-    {
-        key = arr[i];
-        int j = i - 1;
-
-        while ((j >= 0) && (arr[j] > key))
-        {
-            arr[j + 1] = arr[j];
-            arr[j] = key;
-            j--;
-        }
-    }
-} 
     

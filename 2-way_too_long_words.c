@@ -64,30 +64,23 @@ char get_last(char* str){
     }
     return str[length - 1];
 }   
-int main(){
+int main()
+{
     int n;
     scanf("%d", &n);
 
     if (n >= 1 && n <= 100)
-        {
+    {
         char str[n][101];
         for (int i = 0; i < n; i++)
-        {
             scanf("%101s", str[i]);
-        }
+        
         for (int i = 0; i < n; i++)
-        {
             if(get_inbetween(str[i]) < 9)
-            {
                 printf("%s\n", str[i]);
-            }
             else
-            {
-                //printf("%c%d%c\n", str[i][0], get_inbetween(str[i]), get_last(str[i]));
                 printf("%c%ld%c\n", str[i][0], strlen(str[i]) - 2, str[i][strlen(str[i]) - 1]);
-
-            }  
-        }
+        
     }
     printf("\n\n");
 }

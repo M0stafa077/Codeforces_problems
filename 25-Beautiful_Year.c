@@ -20,12 +20,11 @@ int is_beautiful(int year_to_check){
     thousands = year_to_check % 10;
     
     if((thousands != hundreds) && (thousands != tens) && (thousands != ones)
-    && (hundreds != tens) && (hundreds != ones)
-    && (tens != ones)){
+        && (hundreds != tens) && (hundreds != ones)
+        && (tens != ones))
         return 1;
-    } else
+    else
         return 0;
-
 }
 
 int main(void){
@@ -33,8 +32,7 @@ int main(void){
     scanf("%d", &year);
     int flag = is_beautiful(++year);
     while (flag != 1)
-    {
         flag = is_beautiful(++year);
-    }   
+    
     printf("%d", year);
 }

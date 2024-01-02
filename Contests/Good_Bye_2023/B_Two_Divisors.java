@@ -10,7 +10,7 @@ import java.util.Scanner;
 
 public class B_Two_Divisors {
 
-    static long gcd(long a, long b) /* Greatest common divisor using euclidean algorithm*/
+    static long GCD(long a, long b) /* Greatest common divisor using euclidean algorithm*/
     {
         if (a == 0)
             return b;
@@ -22,12 +22,13 @@ public class B_Two_Divisors {
             return a;
 
         if (a > b)
-            return gcd(a - b, b);
+            return GCD(a - b, b);
 
-        return gcd(a, b - a);
+        return GCD(a, b - a);
     }
 
-    public static void main(String [] args){
+    public static void main(String [] args)
+    {
         long a, b, test_cases;
         Scanner scanner = new Scanner(System.in);
         test_cases = scanner.nextLong();
@@ -39,7 +40,7 @@ public class B_Two_Divisors {
             if (b % a == 0)
                 System.out.println((b * b / a));
             else
-                System.out.println((a * b) / gcd(a, b));
+                System.out.println((a * b) / GCD(a, b));
         }
         scanner.close();
     }

@@ -5,12 +5,12 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include "helper_functions/helper_functions.c"
+#include "helper_functions/helper_functions.h"
 
 int main(void) {
     int columns, l_counter;
     scanf("%d", &columns);
-    
+
     int *toys = (int*) calloc(columns, sizeof(int));
     for (l_counter = 0; l_counter < columns; l_counter++)
         scanf("%d", &toys[l_counter]);

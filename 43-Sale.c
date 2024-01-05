@@ -5,7 +5,7 @@
 */
 #include <stdio.h>
 #include <stdlib.h>
-#include "helper_functions/helper_functions.c"
+#include "helper_functions/helper_functions.h"
 
 int main()
 {
@@ -16,7 +16,7 @@ int main()
     for(l_counter = 0; l_counter < number_of_sets; ++l_counter)
         scanf("%d", &TV_prices[l_counter]);
 
-    ASC_sort(TV_prices, number_of_sets);     
+    ASC_sort(TV_prices, number_of_sets);
 
     int max_profit = 0;
     for(l_counter = 0; l_counter < max_carry; ++l_counter)
@@ -24,5 +24,5 @@ int main()
             max_profit += TV_prices[l_counter];
 
     max_profit *= -1;
-    printf("%d", max_profit);    
+    printf("%d", max_profit);
 }

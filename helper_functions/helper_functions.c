@@ -2,6 +2,7 @@
  * some C helper functions
  * @author : Mostafa Asaad
 */
+#include "helper_functions.h"
 
 /* Ascending sort function */
 void ASC_sort(int *array, int size)
@@ -34,11 +35,11 @@ void DSC_sort(int *array, int size)
             --i;
         }
         array[i + 1] = key;
-    }    
+    }
 }
 
 /* Greatest Common Divisor using Euclidean algorithm*/
-long GCD(long a, long b) 
+long GCD(long a, long b)
 {
     if (0 == a)
         return b;
@@ -56,7 +57,7 @@ long GCD(long a, long b)
 }
 
 /* Delete a number from an array */
-void delete_fromArray(int *arr, int size, int num) 
+void delete_fromArray(int *arr, int size, int num)
 {
     int i, j, found = 0;
 
@@ -64,15 +65,15 @@ void delete_fromArray(int *arr, int size, int num)
         if (arr[i] == num) {
             found = 1;
             break;
-        } 
-        else 
+        }
+        else
             {/*Nothing*/}
 
-    if (found) 
+    if (found)
         for (j = i; j < size - 1; ++j)
             arr[j] = arr[j + 1];
-    
-    else 
+
+    else
         {/*Nothing*/}
 }
 
@@ -88,7 +89,7 @@ void print_array(int *array, int size)
     for(int f_counter = 0; f_counter < size - 1; ++f_counter)
         printf("%d ", array[f_counter]);
 
-    printf("%d\n", array[size-1]);    
+    printf("%d\n", array[size-1]);
 }
 
 /* Function fills an array of ints from stdin */

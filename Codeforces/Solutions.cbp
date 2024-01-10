@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes" ?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6" />
+	<Project>
+		<Option title="Solutions" />
+		<Option pch_mode="2" />
+		<Option compiler="gcc" />
+		<Build>
+			<Target title="Debug">
+				<Option output="bin/Debug/Solutions" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Debug/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-g" />
+				</Compiler>
+			</Target>
+			<Target title="Release">
+				<Option output="bin/Release/Solutions" prefix_auto="1" extension_auto="1" />
+				<Option object_output="obj/Release/" />
+				<Option type="1" />
+				<Option compiler="gcc" />
+				<Compiler>
+					<Add option="-O2" />
+				</Compiler>
+				<Linker>
+					<Add option="-s" />
+				</Linker>
+			</Target>
+		</Build>
+		<Compiler>
+			<Add option="-Wall" />
+		</Compiler>
+		<Unit filename="1-Watermelon.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="10-Word_Capitalization.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="11-Boy_or_Girl.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="12-Stones_on_the_Table.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="13-Bear_and_Big_Brother.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="14-Elephant.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="15-Soldier_and_Bananas.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="16-Word.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="17-Wrong_Subtraction.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="18-Nearly_Lucky_Number.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="19-Anton_and_Danik.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="2-way_too_long_words.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="20-Translation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="21-Tram.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="22-Vanya_and_Fence.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="23-Array_Decrements.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="24-Queue_at_the_School.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="25-Beautiful_Year.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="26-In_Search_of_an_Easy_Problem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="27-George_and_Accommodation.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="28-Magnets.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="29-Presents.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="3-Team.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="30-Calculating_Function.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="31-Drinks.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="32-Ultra-Fast_Mathematician.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="33-Is_your_horseshoe_on_the_other_hoof.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="34-Hulk.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="35-Divisibility_Problem.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="36-Football.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="37-Twins.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="38-Even_Odds.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="39-HQ9+.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="4-Next_Round.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="40-Gravity_Flip.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="41-Kefa_and_First_Steps.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="42-Puzzles.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="43-Sale.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="44-Candies.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="45-Reconnaissance.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="46-Ball_Game.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="47-Declined_Finalists.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="48-Team_Olympiad.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="5-Bit++.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="6-Domino_Piling.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="7-Beautiful_Matrix.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="8-Petya_and_Strings.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="9-Helpful_Math.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Contests/Good_Bye_2023/A-2023.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="Contests/Good_Bye_2023/B_Two_Divisors.java" />
+		<Unit filename="ICPC_Assiut_University/Sheet1/A.Say_hello_with_c++.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="ICPC_Assiut_University/Sheet1/B.Basic_data_types.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="helper_functions/helper_functions.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Unit filename="main.c">
+			<Option compilerVar="CC" />
+		</Unit>
+		<Extensions />
+	</Project>
+</CodeBlocks_project_file>

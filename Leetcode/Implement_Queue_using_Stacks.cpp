@@ -5,7 +5,7 @@ using namespace std;
 
 class MyQueue 
 {
-private :
+private:
     stack <int> main_stack;    
     stack <int> sec_stack;
 public:

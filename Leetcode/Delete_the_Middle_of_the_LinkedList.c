@@ -17,8 +17,7 @@ struct ListNode* deleteMiddle(struct ListNode* head)
 
     if(listSize == 1)
     {
-        head = NULL;
-        return head;
+        return NULL;
     }
 
     temp_ptr = head;

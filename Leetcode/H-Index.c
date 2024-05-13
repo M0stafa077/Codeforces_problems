@@ -1,5 +1,5 @@
 /**
- * @file Jump_Game_II.c
+ * @file H-Index.c
  * @author Mostafa Asaad (https://github.com/M0stafa077)
  * @brief Problem number 274 on Leetcode. 
 */
